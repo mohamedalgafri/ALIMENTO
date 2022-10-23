@@ -155,6 +155,12 @@ h1{
 .slideheader img:nth-child(1){
   position: absolute;
 }
+.slideheader{
+  width: 100%;
+}
+.slideheader img:nth-child(2){
+  width: 100% !important;
+}
 
 .textslide{
   position: absolute;
@@ -408,12 +414,15 @@ h1{
   background-color: #CBC1B5;
   border-radius: 50%;
   cursor: pointer;
-
+  transition: all.4s ease;
 }
 .popcardpro img{
   width: 22px;
 }
 
+.popcardpro:hover{
+  background-color: #776352;
+}
 
 
 .cardProdact{
@@ -424,14 +433,20 @@ h1{
   background-color: #F9F4F0;
   border-radius: 30px;
   position: relative;
+  cursor: pointer;
 }
+
+
 .cardProdact > img{
-  width: 250px;
-  height: 250px;
+  width: 220px;
+  height: 220px;
   object-fit: cover;
   object-position: center center;
   margin: 0 auto;
   transition: all .4s ease;
+  display: flex;
+  margin-bottom: auto;
+  margin:20px 0 30px 0;
 
 }
 
@@ -441,6 +456,41 @@ h1{
 .cardProdact:hover .hpopcardpros{
   transform: translateY(-65px);
   opacity: 1;
+}
+
+@media (max-width:1200px) {
+  .cardProdact{
+    width: 32%;
+  }
+}
+@media (max-width:991px) {
+  .cardProdact{
+    width: 48%;
+  }
+}
+@media (max-width:700px) {
+  .cardProdact{
+    width: 48%;
+  }
+  .cardProdact > img{
+    width: 160px;
+    height: 160px;
+  }
+}
+@media (max-width:470px) {
+  .cardProdact{
+    width: 90%;
+    margin: 0 auto;
+  }
+  .cardProdact > img{
+    width: 180px;
+    height: 180px;
+  }
+}
+
+.row>* {
+   padding-right: 0; 
+   padding-left: 0; 
 }
 
 
@@ -478,4 +528,272 @@ h1{
   padding: 4px 10px;
   border-radius: 20px;
   color: #fff !important;
+}
+
+/* //////////////////////////////consultingSection///////////////////////// */
+
+.consultingSection{
+  background-color: #F9F4F0;
+  display: flex;
+  align-items: center;
+  position: relative;
+  margin: 100px auto;
+  padding: 40px 80px;
+  border-radius: 30px;
+}
+
+.rightConsulting{
+  width: 50%;
+}
+.rightConsulting h1{
+  margin-bottom: 20px;
+}
+.treeshap{
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 260px;
+  z-index: 1;
+  border-radius: 50px 0 0 50px;
+}
+
+.smilingDoc{
+  position: absolute;
+  width: 430px;
+  bottom: 0;
+  left: 5%;
+  z-index: 2;
+  overflow: hidden;
+
+}
+
+.rightConsulting .btnn{
+  float: right;
+}
+
+.listConsulting li{
+  margin-bottom: 10px;
+}
+
+
+/* /////////////////////////////////blogSection//////////////////////////////// */
+
+.cardsBlog{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+.cardblog{
+  border: 1px solid #E8E8E8;
+  width: 30%;
+  border-radius: 30px;
+  overflow: hidden;
+}
+.imgcardblog{
+  width: 100%;
+  height: 250px;
+  overflow: hidden;
+}
+.cardblog img{
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  object-position: center center;
+  border-radius: 30px 30px 0 0;
+  transition: all .4s ease;
+}
+
+.cardblog:hover img{
+  transform: scale(1.1);
+}
+
+.buttoncardb{
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  justify-content: space-between;
+}
+
+
+.buttoncardb .comread{
+  text-decoration: none;
+  margin-top: auto ;
+  color: #56B985;
+  font-weight: 600;
+}
+.buttoncardb p{
+  font-size: 14px;
+  color: #707070;
+}
+
+.buttoncardb h5{
+  font-weight: 600;
+  color: #000;
+}
+
+
+.tipblog{
+  width: max-content;
+  padding: 6px 10px;
+  border-radius: 10px;
+  font-weight: 600;
+  margin-top: 0px;
+  background-color: #E6F5ED;
+  color: #56B985;
+  margin-bottom: 9px;
+ 
+}
+
+.greentip{
+  background-color: #E6F5ED;
+  color: #56B985 !important;
+}
+
+.bluetip{
+  background-color: #D9E4EB;
+  color: #004B79 !important;
+}
+
+/* /////////////////////////////////////////////ourNewsletter//////////////////////// */
+
+
+.ourNewsletter{
+  background-color: #776352;
+  margin-top: 50px;
+  padding: 20px;
+  color: #fff;
+}
+
+.allourNewsletter{
+  display: flex;
+  justify-content: space-between;
+}
+.allourNewsletter h5{
+  line-height: 150%;
+}
+
+.inputOurNewsletter{
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+.inputOurNewsletter input{
+  width: 340px;
+  height: 60px;
+  border-radius: 50px;
+  border: none;
+  outline: none;
+  padding: 20px;
+}
+.inputOurNewsletter button{
+  width: 60px;
+  height: 60px;
+  border: none;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.inputOurNewsletter button img{
+  transition: all .4s ease;
+}
+.inputOurNewsletter button:hover img{
+  transform: translateX(-5px);
+}
+
+
+
+/* /////////////////////////////////////////////footer////////////////////////////// */
+
+.footer{
+  background-color: #F9F4F0;
+  padding: 20px 0;
+
+}
+
+.logofooter{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.linefoo{
+  width: 42%;
+  height: 1px;
+  background-color: #7070702b;
+}
+
+.footerlogo{
+  margin: 0 auto;
+
+}
+
+/* //////////bodyfooter///////// */
+
+
+.bodyfooter{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+.aboutfoo{
+  width: 30%;
+}
+.aboutfoo h5{
+  font-weight: 600;
+}
+
+.linksfoo{
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+}
+
+.col-links{
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.col-links h5{
+  font-weight: 600;
+}
+.col-links a{
+  color: #000;
+}
+
+.navphfoo{
+  flex-direction: row-reverse;
+  margin-left: auto;
+
+}
+.navphfoo p{
+  text-align: right;
+}
+.sotialfooter{
+  display: flex;
+  gap: 10px;
+}
+
+.popfooterso{
+  width: 40px;
+  height: 40px;
+  background-color: #776352;
+  color: #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+}
+.popfooterso:hover i{
+  color: rgb(178, 178, 178);
+}
+
+.copyright{
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  border-top: 1px solid #7070702b;
+  padding-top: 15px;
 }

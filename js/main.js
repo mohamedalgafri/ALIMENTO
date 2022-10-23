@@ -1,6 +1,6 @@
 /////////////////////////////////////swiper header/////////////////////////////////////////////
 
-var swiper = new Swiper(".mySwiper", {
+var swiper = new Swiper(".mySwiperheder", {
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
