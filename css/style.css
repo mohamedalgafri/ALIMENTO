@@ -449,7 +449,7 @@ h1{
 
 
 .header  .swiper-rtl .swiper-button-prev {
-  right: 10% !important;
+  right: 10% ;
   left: auto !important;
   
 }
@@ -532,12 +532,12 @@ h1{
 .mySwiperheder .swiper-button-next img, .swiper-button-prev img{
   width: 20px;
 }
-.mySwiperheder .swiper-button-prev, .swiper-rtl .swiper-button-next {
-  left: 5%;
+.mySwiperheder .swiper-button-next {
+  left: 5% !important;
   right: auto;
 }
-.mySwiperheder .swiper-button-next, .swiper-rtl .swiper-button-prev {
-  right: 5%;
+.mySwiperheder  .swiper-button-prev {
+  right: 5% !important;
   left: auto;
 }
 
