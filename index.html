@@ -15,6 +15,13 @@
 </head>
 <body>
 
+
+    <nav class="navbarmob">
+
+    </nav>
+
+
+
     <nav class=" navbartop ">
         <div class="navtop container">
             <div class="rightNavTap">
@@ -51,9 +58,9 @@
     
                 <div class="lefticonNav">
 
-                    <i class='bx bx-menu'></i>
+                    <i class='bx bx-menu' type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample"></i>
                    <img src="../image/Basket Icon.svg" alt="">
-                   <img src="../image/vuesax-broken-search-favorite.svg" alt="">
+                   <img src="../image/vuesax-broken-search-favorite.svg" alt="" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop" aria-controls="offcanvasTop" >
                    
                 </div>
     
@@ -952,6 +959,94 @@
             </div>
         </div>
     </footer>
+
+
+    <!-- ///////////////////////////////////////modals////////////////////////////////////////// -->
+
+    <div class="offcanvas offcanvas-top" tabindex="-1" id="offcanvasTop" aria-labelledby="offcanvasTopLabel">
+        <div class="offcanvas-header">
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body container">
+      
+          <div class="searchmodal ">
+              <img src="image/vuesax-broken-search-favoritee.svg" alt="">
+              <input type="text" placeholder="عن ماذا تريد البحث">
+              <input type="text" placeholder="التصنيفات">
+          </div>  
+      
+          <button class="btnsearch">بحث</button>
+          
+        </div>
+      </div>
+
+<!-- ///////////////////////////////////////////////////////////////////////////////////////////// -->
+
+
+<!-- ///////////////////////////////////////////////menu mob////////////////////////////////////////////////// -->
+      
+      <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+        <div class="offcanvas-header">
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          <a href="index.html"> <img src="../image/Artboard 1.svg" alt=""></a>
+        </div>
+        <div class="offcanvas-body">
+
+            <ul class="listmenumob">
+                <li><a href="index.html">الرئيسية</a></li>
+                <li><a href="">المنتجات</a></li>
+                <li><a href="">الخدمات</a></li>
+                <li><a href="">المدونة</a></li>
+                <li><a href="">من نحن</a></li>
+                <li><a href="">نقاط البيع</a></li>
+                <li><a href="">تواصل معنا</a></li>
+
+            </ul>
+
+            <div class="emailnavm">
+                <img src="image/svgexport-7 (4).svg" alt="">
+                <p>Alimento.Gaza@gmail.com</p>
+            </div>
+            <div class="emailnavm">
+                <img src="image/svgexport-7 (5).svg" alt="">
+                <p>00970-8-2824445</p>
+            </div>
+
+            <div class="logandlang">
+
+                <div class="loginnav">
+
+                    <div><a href="">إنشاء  / </a>  <a href="">تسجيل</a></div>
+    
+                    <img src="image/Group 42.svg" alt="">
+        
+                </div>
+
+
+
+
+                <div class="selectLang">
+
+                    <select name="" id="">
+                        <option value="english"> Arabic</option>
+                        <option value="arabic">English</option>
+                    </select>
+    
+    
+                    <img src="image/Mask Group 3.svg" alt="">
+    
+                </div>
+
+
+            </div>
+            
+
+        </div>
+      </div>
+
+<!-- ///////////////////////////////////////////////////////////////////////////////////////////// -->
+
+
 
     <script src="../js/swiper.js"></script>
 
