@@ -137,6 +137,19 @@ h1{
     gap: 10px;
     
 }
+
+.lefticonNav i{
+  font-size: 35px;
+  cursor: pointer;
+  display: none;
+}
+
+@media (max-width:991px) {
+  .lefticonNav i{
+    display: block;
+  }
+}
+
 .lefticonNav img{
     cursor: pointer;
 }
@@ -158,19 +171,51 @@ h1{
 
 .navbar{
     color: #F4F4F4;
-    box-shadow: #f4f4f48d 0px  15px 55px 25px  inset;
-    margin-top: 10px;
+    box-shadow: #c9c9c928 0px  15px 55px 25px  inset;
+
+    overflow: hidden;
+    padding: 0px !important;
+    position: sticky;
+    top: 0;
+    z-index: 99;
+
+}
+
+.scroll-nav{
+  background-color: #fff;
 }
 
 .navlist{
     display: flex;
     gap: 10px;
     justify-content: space-between;
-    width: 50%;
+    width: 60%;
     align-items: center;
+    padding: 0 !important;
+    margin: 0 !important;
+    height: 60px;
+    z-index:1;
+}
+
+@media (max-width:1200px) {
+  .navlist{
+    width: 66%;
+}
+}
+
+.navlist li.active{
+  background-color: #fff;
 }
 .navlist li{
    list-style: none;
+   height: 100%;
+   width: 100%;
+   display: flex;
+   align-items: center;
+  justify-content: center;
+  padding: 0;
+  margin: 0 !important;
+  
 }
 
 .navlist  a{
@@ -203,7 +248,39 @@ h1{
 
 
 
+.selectLang select{
+  border: none;
+  background-color: transparent;
+  outline: none;
+}
 
+.selectLang {
+  display: flex;
+  gap: 10px;
+  /* margin-top: -10px; */
+}
+
+.selectLang img{
+  width: 27px;
+  height: 27px;
+  border-radius: 50%;
+}
+
+.allnavbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.loginnav{
+  display: flex;
+  gap: 10px;
+  /* margin-top: -10px; */
+}
+
+.loginnav a{
+  color: #989898;
+}
 
 /* ////////////////////////////////////////Header///////////////////////////////////////////// */
 
@@ -617,7 +694,6 @@ h1{
   display: flex;
   margin-bottom: auto;
   margin:20px 0 30px 0;
-
 }
 
 .cardProdact:hover > img{
@@ -634,9 +710,35 @@ h1{
   }
 }
 @media (max-width:991px) {
+
+  .textcardProdact {
+    background-color: #F5F5F5;
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 20px !important;
+}
   .cardProdact{
     width: 48%;
   }
+  .cardProdact .hpopcardpros{
+    transform: translateY(-55px);
+    opacity: 1;
+  }
+  .cardProdact:hover .hpopcardpros{
+    transform: translateY(-55px);
+    opacity: 1;
+  }
+  .cardProdact:hover > img{
+    transform: scale(1);
+  }
+  
+.popcardpro{
+  width: 40px;
+  height: 40px;
+}
+.popcardpro img{
+  width: 20px;
+}
 }
 @media (max-width:700px) {
   .cardProdact{
