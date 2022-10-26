@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <g id="home-hashtag" transform="translate(-556 -188)">
+    <path id="Vector" d="M6,0H3A3.009,3.009,0,0,0,0,3V6A3.009,3.009,0,0,0,3,9H6A3.009,3.009,0,0,0,9,6V3" transform="translate(563.5 197)" fill="none" stroke="#292d32" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+    <path id="Vector-2" data-name="Vector" d="M0,0V9" transform="translate(568 197)" fill="none" stroke="#292d32" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+    <path id="Vector-3" data-name="Vector" d="M0,0H9" transform="translate(563.5 201.5)" fill="none" stroke="#292d32" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+    <path id="Vector-4" data-name="Vector" d="M20,8.483a4.723,4.723,0,0,0-1.8-3.45L12.02.7a4.487,4.487,0,0,0-5,.12l-5.39,4.2A4.759,4.759,0,0,0,0,8.343v7.41a4.225,4.225,0,0,0,4.21,4.22H15.79A4.223,4.223,0,0,0,20,15.763v-3.1" transform="translate(558 190.017)" fill="none" stroke="#292d32" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+    <path id="Vector-5" data-name="Vector" d="M0,0H24V24H0Z" transform="translate(556 188)" fill="none" opacity="0"/>
+  </g>
+</svg>
