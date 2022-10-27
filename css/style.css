@@ -14,6 +14,10 @@ a{
    text-decoration: none;
 }
 
+.font-600{
+  font-weight: 600;
+}
+
 /* @media (min-width: 1700px){
   .container, .container-md, .container-sm {
       max-width: 70% !important ;
@@ -2103,5 +2107,55 @@ ul#pills-tab{
 @media (max-width: 420px) {
   .nutritional {
     width: 260px;
+  }
+}
+
+/* ################################ Blog Details ###################### */
+
+.blogDetailaSec{
+  margin-top: 30px;
+}
+
+.titleBlogDetails{
+  display: flex;
+  gap: 30px;
+  align-items: baseline;
+}
+
+.titleBlogDetails p{
+  margin: 0;
+  color: #776352;
+}
+
+.imgBlogDetails img{
+  width: 100%;
+  margin-top: 20px;
+  border-radius: 30px;
+  height: 450px;
+  object-fit: cover;
+  object-position: center center;
+}
+
+.detalesBlog{
+  margin: 40px 0;
+}
+.detalesBlog p{
+  color: #707070;
+}
+
+.titledet{
+  color: #88CE97 !important;
+  font-weight: 600;
+}
+
+@media (max-width:600px) {
+  .titleBlogDetails h1{
+    font-size: 20px;
+  }
+  .titleBlogDetails p{
+    font-size: 14px;
+  }
+  .imgBlogDetails img{
+    height: 300px;
   }
 }
