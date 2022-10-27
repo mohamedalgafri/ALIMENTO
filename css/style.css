@@ -308,6 +308,12 @@ h1{
   height: 240px !important;
 }
 
+@media (max-width:500px) {
+  .offcanvas{
+    width: 100% !important;
+  }
+}
+
 .btnsearch{
   width: 100px;
   height: 50px;
@@ -768,6 +774,7 @@ h1{
   border-radius: 30px;
   position: relative;
   cursor: pointer;
+  color: #656565 !important;
 }
 
 
@@ -1419,10 +1426,15 @@ h1{
   align-items: flex-start;
   gap: 4px;
   margin-top: 10px;
+  color: #776352;
 }
 
-.linkshed a{
+.linkshed a:nth-child(1){
   margin-top: -3px;
+}
+.linkshed a{
+  text-decoration: none;
+  color: #776352;
 }
 
 /* //////////////////////////////////// */
@@ -1799,5 +1811,296 @@ h1{
   }
   .leftContantContact{
     width: 100%;
+  }
+}
+
+
+
+
+/* ###################### Product Details ################ */
+
+.productDetails{
+  display: flex;
+  gap: 60px;
+  margin-top: 40px;
+
+}
+
+.rightProductDetails{
+  width: 40%;
+  background-color: #F9F4F0;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 30px;
+  min-height: 500px;
+}
+.rightProductDetails img{
+  width: 330px;
+  height: auto;
+  object-fit: cover;
+  object-position: center center;
+}
+
+
+.leftProductDetails h3{
+  font-weight: 600;
+  color: #776352;
+}
+.leftProductDetails hr{
+  color: #C9C9C9;
+}
+
+.leftProductDetails h4{
+  color: #656565;
+}
+.leftProductDetails h4 span{
+  color: #88CE97;
+}
+.leftProductDetails p{
+  color: #656565;
+}
+
+
+.availableInStore{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+}
+.availableInStore p{
+  color: #88CE97;
+  margin-bottom: 2px;
+}
+
+.numProdDetels input{
+  width: 80px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #DFDFDF;
+  border-radius: 10px;
+  outline: none;
+  text-align: center;
+}
+
+.numProdDetels{
+  display: flex;
+  gap: 6px
+}
+.numProdDetels label{
+  display: block;
+  border: 1px solid #DFDFDF;
+  padding: 3px;
+  width: 25px;
+  height: 23px;
+  margin-bottom: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.numProduc {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+}
+
+.textNumProduc{
+  display: flex;
+  gap: 20px;
+}
+
+.textNumProduc p:nth-child(1){
+  color: #88CE97;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.textNumProduc p:nth-child(2){
+  text-decoration: line-through;
+  font-size: 18px;
+}
+
+
+.categoryProduct span{
+  color: #88CE97;
+  margin: 0 10px;
+}
+
+.tags{
+  display: flex;
+  gap: 10px;
+}
+
+.tags .tag{
+  background-color: #E6F5ED;
+  color: #56B985;
+  padding: 3px 10px;
+  border-radius: 7px;
+}
+
+
+.buyNow{
+  display: flex;
+  gap: 8px;
+}
+
+.btnBuyNow{
+  width: 220px;
+  padding: 10px 0;
+  border-radius: 30px;
+  border: none;
+  color: #fff;
+  background-color: #56B985;
+}
+
+.buyNow .btniconn{
+  width: 45px;
+  height: 45px;
+  border: none;
+  background-color: #CBC1B5;
+  border-radius: 50%;
+}
+
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+
+/* //////////////discraptionProductDetails////////// */
+
+.discraptionProductDetails{
+  margin-top: 30px;
+}
+
+.desProd{
+  background-color: #FCFCFC;
+  padding: 20px;
+  color: #656565;
+  border-radius: 30px;
+}
+
+.endDate{
+  background-color: #BEBEBE;
+  width: max-content;
+  padding: 7px 10px;
+  border-radius: 20px;
+  color: #FCFCFC;
+}
+
+.nutritionalInformation{
+  display: flex;
+  gap: 80px;
+  margin-top: 40px;
+}
+
+.nutritional{
+  display: flex;
+  justify-content: space-between;
+  width: 400px;
+  border-bottom: 1px solid #C9C9C9;
+  margin-bottom: 20px;
+}
+
+.nutritional p:nth-child(1) {
+  font-weight: 600;
+}
+
+ul#pills-tab{
+  transform: translateX(43px);
+}
+
+.nav-pills .nav-link {
+  background:#FBFBFB;
+  color: #656565;
+  border: 0;
+  border-radius: 20px;
+  margin: 0 5px;
+  padding: 10px 20px;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+  color: #656565;
+  background-color: #F9F4F0;
+}
+
+
+@media (max-width: 991px) {
+  .nutritionalInformation{
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .productDetails{
+    flex-direction: column;
+  
+  }
+  .rightProductDetails{
+    width: 100%;
+    min-height: 240px;
+  }
+
+  .rightProductDetails{
+    background-color: #F9F4F0;
+    height: 400px;
+  }
+  .rightProductDetails img{
+    width: 280px;
+  }
+  
+}
+
+@media (max-width: 568px) {
+  .productDetails{
+    flex-direction: column;
+  
+  }
+  .rightProductDetails{
+    width: 100%;
+    min-height: 240px;
+  }
+
+  .rightProductDetails{
+    background-color: #F9F4F0;
+    height: 300px;
+  }
+  .rightProductDetails img{
+    width: 240px;
+  }
+  .numProduc {
+    gap: 20px;
+}
+.textNumProduc{
+  gap: 10px;
+}
+.tags{
+  flex-wrap: wrap;
+}
+
+.nutritional {
+  width: 340px;
+}
+  
+}
+
+@media (max-width: 420px) {
+  .nutritional {
+    width: 260px;
   }
 }
