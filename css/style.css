@@ -18,6 +18,14 @@ a{
   font-weight: 600;
 }
 
+.grrencolor{
+  color: #88CE97;
+}
+
+.redcolor{
+  color: #EC5353;
+}
+
 /* @media (min-width: 1700px){
   .container, .container-md, .container-sm {
       max-width: 70% !important ;
@@ -54,6 +62,14 @@ h1{
     justify-content: space-between;
     align-items: center;
 }
+
+@media (max-width:991px) {
+  .navtop{
+    flex-direction: row-reverse;
+  }
+
+}
+
 
 .rightNavTap{
     display: flex;
@@ -236,7 +252,8 @@ h1{
     width: auto;
   }
   .imgLogo {
-    width: 100%;
+    width: auto;
+    margin-right: auto;
    /* display: flex;
    justify-content: center; */
 }
@@ -336,24 +353,34 @@ h1{
 .logandlang{
   display: flex;
   justify-content: space-between;
+  flex-direction: row-reverse;
 }
 
 .listmenumob{
   margin: 0;
   padding: 0;
-  text-align: center;
+  text-align: right;
   margin-bottom: 20px;
 }
 .listmenumob li{
   list-style: none;
   margin-bottom: 20px;
-  background-color: #e9e9e985;
-  padding: 10px 0;
+  /* background-color: #e9e9e985; */
+  padding: 10px 0px;
+  border-radius: 30px;
+}
+.listmenumob li.active{
+  list-style: none;
+  margin-bottom: 20px;
+  background-color: #F2EAE0;
+  padding: 10px 0px;
   border-radius: 30px;
 }
 
 .listmenumob li a{
   color: #000;
+  padding: 0 20px;
+  display: block;
 }
 
 .emailnavm{
@@ -368,14 +395,30 @@ h1{
   margin-top: -15px;
 }
 
+.emailnavm{
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+  font-size: 14px;
+}
+
 .offcanvas{
   background-color: rgb(248, 248, 248)
 }
 
 .imgmodel{
-  width: 90px;
-  display: none;
+  width: 100px;
 }
+
+.loginnav{
+  background-color: transparent;
+  border: 1px solid #F2EAE0;
+  padding: 10px;
+  border-radius: 30px;
+  justify-content: center;
+  flex-direction: row-reverse;
+}
+
 
 /* ////////////////////////////////////////Header///////////////////////////////////////////// */
 
@@ -1991,14 +2034,14 @@ input[type=number] {
   margin-top: 30px;
 }
 
-.desProd{
+.discraptionProductDetails .desProd{
   background-color: #FCFCFC;
   padding: 20px;
   color: #656565;
   border-radius: 30px;
 }
 
-.endDate{
+.discraptionProductDetails .endDate{
   background-color: #BEBEBE;
   width: max-content;
   padding: 7px 10px;
@@ -2006,13 +2049,13 @@ input[type=number] {
   color: #FCFCFC;
 }
 
-.nutritionalInformation{
+ .nutritionalInformation{
   display: flex;
   gap: 80px;
   margin-top: 40px;
 }
 
-.nutritional{
+ .nutritional{
   display: flex;
   justify-content: space-between;
   width: 400px;
@@ -2020,7 +2063,7 @@ input[type=number] {
   margin-bottom: 20px;
 }
 
-.nutritional p:nth-child(1) {
+ .nutritional p:nth-child(1) {
   font-weight: 600;
 }
 
@@ -2028,7 +2071,7 @@ ul#pills-tab{
   transform: translateX(43px);
 }
 
-.nav-pills .nav-link {
+.discraptionProductDetails .nav-pills .nav-link {
   background:#FBFBFB;
   color: #656565;
   border: 0;
@@ -2037,7 +2080,7 @@ ul#pills-tab{
   padding: 10px 18px;
 }
 
-.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+.discraptionProductDetails .nav-pills .nav-link.active, .nav-pills .show>.nav-link {
   color: #656565;
   background-color: #F9F4F0;
 }
@@ -2158,4 +2201,448 @@ ul#pills-tab{
   .imgBlogDetails img{
     height: 300px;
   }
+}
+
+
+/* ################################Account################################## */
+
+
+.bodyaccount{
+  gap: 50px;
+  margin-top: 40px;
+}
+
+.bodyaccount .nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+  color: #88CE97;
+  background-color: transparent;
+}
+
+.bodyaccount .nav-link {
+  color: #4A4A4A;
+  background-color: transparent;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  align-items: center;
+}
+.bodyaccount .nav-link i{
+  margin-top: -10px ;
+}
+
+.rightAccount{
+  background-color: #FBFBFB;
+  border-radius: 20px;
+  width: 360px;
+  padding: 20px;
+}
+.leftAccount{
+  background-color: #FBFBFB;
+  width: 80%;
+  padding:30px;
+  border-radius: 20px;
+}
+
+.leftAccount .inputname{
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0;
+  margin-bottom: 15px;
+  gap: 20px;
+}
+
+.leftAccount .inputname input{
+  width: 49%;
+  padding: 15px;
+  border-radius: 30px;
+  border: 1px solid #DCDCDC;
+  outline: none;
+  color: #555555;
+}
+.leftAccount .inputname select{
+  width: 49%;
+  padding: 15px;
+  border-radius: 30px;
+  border: 1px solid #DCDCDC;
+  outline: none;
+  color: #555555;
+  background-position: left 0.75rem center;
+}
+.leftAccount .inputname select:focus{
+  box-shadow: 0 0 0 !important;
+}
+
+.leftAccount .restFillter{
+  width: max-content;
+  display: flex;
+  margin-right: auto;
+  padding: 13px;
+}
+
+.leftAccount .titletable{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.leftAccount .titletable button{
+  color: #88CE97;
+  border: 1px solid #88CE97;
+  background-color: transparent;
+  border-radius: 30px;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.table>:not(caption)>*>*{
+  border-bottom-width: 0;
+  padding: 15px;
+}
+.table>thead{
+  background-color: #fff; 
+  color: #555555;
+  border: 1px solid #DCDCDC;
+}
+
+.inputff{
+  display: flex;
+  gap: 30px;
+  margin: 10px 0;
+}
+.inputff .form-check-input:checked {
+  background-color: #88CE97;
+  border-color:  #88CE97;
+}
+.form-check-input:focus {
+  border-color : #88CE97;
+  outline: 0;
+  box-shadow: 0 0 0 ;
+}
+
+.addNew{
+  --bs-modal-width: 750px;
+}
+
+.addNew h2{
+  margin: 20px 0;
+}
+
+.addNew .modal-content{
+  border-radius: 30px;
+  border: none;
+}
+.modal-body{
+  padding: 20px 40px;
+}
+
+.btnmodel{
+  display: flex;
+  gap: 10px;
+}
+
+.saveinput{
+  background-color: #88CE97;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  border-radius: 30px;
+  width: 130px;
+}
+
+.closemodel{
+  background-color: transparent;
+  color: #88CE97;
+  padding: 10px;
+  border: 1px solid #88CE97;
+  border-radius: 30px;
+  width: 130px;
+}
+
+
+.addNewFooter{
+  display: flex;
+  justify-content: space-between;
+}
+
+.editSiteTable{
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.imgEmptyList{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: 150px 0;
+}
+
+.imgEmptyList h4{
+  margin-top: 20px;
+  color: #776352;
+}
+
+
+@media (max-width:991px) {
+  .bodyaccount{
+    flex-direction: column;
+  }
+  .rightAccount{
+    width: 100%;
+  }
+  .leftAccount{
+    width: 100%;
+  }
+  .table{
+    width: 600px;
+  }
+}
+
+@media (max-width:768px) {
+  .leftAccount .inputname {
+    flex-direction: column;
+  }
+  .leftAccount .inputname input{
+    width: 100%;
+  }
+  .leftAccount .inputname select{
+    width: 100%;
+  }
+  .addNew {
+    --bs-modal-width: 90% !important;
+}
+}
+
+@media (max-width:500px) {
+  .btnmodel{
+    margin: 0 auto;
+    margin-top: 10px;
+  }
+}
+
+
+
+/* ######################### bodyfavorite ################### */
+
+.bodyfavorite{
+  margin-top: 20px;
+}
+
+.imgetable{
+  background-color: #F9F4F0;
+  width: 120px;
+  height: 100px;
+  padding: 10px;
+  border-radius: 30px;
+}
+.imgetable img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center center;
+}
+
+
+.editrowtable{
+  display: flex;
+  gap: 7px;
+}
+
+.deleterowtable{
+  background-color: transparent;
+  border: 1px solid #EC5353;
+  width: max-content;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+} 
+
+.addcart{
+  background-color: #88CE97;
+  border: 1px solid #88CE97;
+  width: max-content;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+/* ############################# Orders ########################### */
+
+.btndetailstable{
+  border: 1px solid #88CE97;
+  color: #88CE97;
+  padding: 10px;
+  width: max-content;
+  border-radius: 30px;
+  cursor: pointer;
+  background-color: transparent;
+}
+
+.rowprod{
+  display: flex;
+  align-items: baseline;
+  gap: 50px;
+  margin-top: 30px;
+} 
+
+.flexmobpro{
+  display: flex;
+  align-items: baseline;
+  gap: 20px;
+}
+
+.rowprod input{
+  width: 60px;
+  height: 50px;
+  border: 1px solid #DFDFDF;
+  border-radius: 10px;
+  outline: none;
+  text-align: center;
+}
+
+.alldetalsdetal{
+  display: flex;
+  justify-content: space-between;
+}
+
+.textdetaels{
+  display: flex;
+  gap: 10px;
+  align-items: baseline;
+}
+
+
+
+.popgreen{
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background-color: #88CE97;
+}
+
+.productDetail{
+  --bs-modal-width: 850px;
+}
+
+.productDetail .modal-content{
+  border-radius: 30px;
+}
+
+.foottermob{
+  padding: 30px;
+  text-align: center;
+}
+
+.btnmodel{
+  float: left;
+  margin-bottom: 20px;
+}
+
+.foottermob hr{
+  width: 80%;
+  margin: 20px auto;
+}
+
+.productDetail .modal-body{
+  padding-top: 50px;
+}
+
+@media (max-width:991px) {
+  .alldetalsdetal{
+    flex-direction: column;
+  }
+  .bodyfavorite .table {
+    width: 900px;
+  }
+}
+@media (max-width:660px) {
+  .rowprod{
+    gap: 5px;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  .flexmobpro{
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    gap: 20px;
+  }
+  .rowprod .imgetable {
+    background-color: #F9F4F0;
+    width: 100%;
+    height: 200px;
+    padding: 5px;
+    border-radius: 30px;
+}
+  
+}
+
+
+/* ############################## Shopping Basket ################################ */
+
+
+.shoppingbody{
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+
+
+.shoppingbody .table-responsive{
+  width: 75%;
+}
+
+@media (max-width:1240px) {
+  .shoppingbody{
+    flex-direction: column;
+  }
+  .shoppingbody .table-responsive{
+    width: 100%;
+  }
+}
+
+
+.finalTotal{
+  width: 266px;
+  height: 130px;
+  background-color: #F9F9F9;
+  padding: 20px;
+  border-radius: 20px;
+}
+
+
+.numFinalTotal{
+  display: flex;
+  justify-content: space-around;
+}
+
+.btnFinalTotal{
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: space-around;
+
+}
+
+.backshop{
+  background-color: #CBCBCB;
+  color: #fff !important;
+  padding: 10px;
+  border-radius: 30px;
+}
+
+.baynow{
+  background-color: #88CE97;
+  color: #fff !important;
+  padding: 10px 20px;
+  border-radius: 30px;
 }
