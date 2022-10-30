@@ -26,6 +26,10 @@ a{
   color: #EC5353;
 }
 
+.colblack{
+  color: #000;
+}
+
 /* @media (min-width: 1700px){
   .container, .container-md, .container-sm {
       max-width: 70% !important ;
@@ -824,8 +828,13 @@ h1{
   color: #656565 !important;
 }
 
+.cardProdact a{
+  width: 100%;
+  color: #656565 !important;
+}
 
-.cardProdact > img{
+
+.cardProdact a > img{
   width: 220px;
   height: 220px;
   object-fit: cover;
@@ -835,9 +844,11 @@ h1{
   display: flex;
   margin-bottom: auto;
   margin:20px 0 30px 0;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.cardProdact:hover > img{
+.cardProdact:hover a > img{
   transform: scale(.8);
 }
 .cardProdact:hover .hpopcardpros{
@@ -2242,7 +2253,7 @@ ul#pills-tab{
   border-radius: 20px;
 }
 
-.leftAccount .inputname{
+.inputname{
   display: flex;
   justify-content: space-between;
   margin: 10px 0;
@@ -2250,7 +2261,7 @@ ul#pills-tab{
   gap: 20px;
 }
 
-.leftAccount .inputname input{
+.inputname input{
   width: 49%;
   padding: 15px;
   border-radius: 30px;
@@ -2258,7 +2269,7 @@ ul#pills-tab{
   outline: none;
   color: #555555;
 }
-.leftAccount .inputname select{
+.inputname select{
   width: 49%;
   padding: 15px;
   border-radius: 30px;
@@ -2266,12 +2277,14 @@ ul#pills-tab{
   outline: none;
   color: #555555;
   background-position: left 0.75rem center;
+  
 }
-.leftAccount .inputname select:focus{
+.inputname select:focus{
   box-shadow: 0 0 0 !important;
+  border: 1px solid #DCDCDC;
 }
 
-.leftAccount .restFillter{
+ .restFillter{
   width: max-content;
   display: flex;
   margin-right: auto;
@@ -2302,6 +2315,7 @@ ul#pills-tab{
   background-color: #fff; 
   color: #555555;
   border: 1px solid #DCDCDC;
+  /* border-bottom: 1px solid #DCDCDC !important; */
 }
 
 .inputff{
@@ -2483,6 +2497,7 @@ ul#pills-tab{
   border-radius: 30px;
   cursor: pointer;
   background-color: transparent;
+  float: left;
 }
 
 .rowprod{
@@ -2645,4 +2660,371 @@ ul#pills-tab{
   color: #fff !important;
   padding: 10px 20px;
   border-radius: 30px;
+}
+
+
+/* ############################ Service Booking ###################################### */
+
+.serviceBookingSection{
+  margin-top: 30px;
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+.rightServiceBooking{
+  display: flex;
+  gap: 30px;
+  border: 1px solid #F5F5F5;
+  padding: 20px;
+  border-radius: 30px;
+  width: 69%;
+  height: max-content;
+}
+.rightServiceBooking .imgdoc {
+  width:600px;
+  height: 220px;
+  border-radius: 30px;
+}
+.rightServiceBooking .imgdoc img{
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  object-position: center center;
+  border-radius: 30px;
+}
+.textdoc{
+  margin-top: 10px;
+}
+
+.availableInStore{
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+
+}
+
+.leftServiceBooking{
+  border: 1px solid #F5F5F5;
+  padding: 20px;
+  border-radius: 30px;
+  height: max-content;
+}
+
+.inputdate{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.inputdate input{
+  background-color: #E6F5ED;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 30px;
+  outline: none;
+}
+
+.btnBooking{
+  margin-top: 25px;
+  width: 100%;
+  padding: 14px;
+  border-radius: 30px;
+  border: none;
+  background-color: #88CE97;
+  color: #fff;
+}
+
+.discraptionServiceBooking{
+  margin-top: 0;
+}
+.discraptionServiceBooking .desProd{
+  width: 69%;
+}
+
+.specialtiesServiceBooking{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+.specialtiesServiceBooking p{
+  margin-bottom: 0px;
+}
+
+@media (max-width:991px) {
+  .serviceBookingSection{
+    flex-direction: column;
+  }
+  .discraptionServiceBooking{
+    margin-top: 30px;
+  }
+  .rightServiceBooking{
+    width: 100%;
+  }
+  .discraptionServiceBooking .desProd{
+    width: 100%;
+  }
+}
+@media (max-width:767px) {
+  .rightServiceBooking{
+    flex-direction: column;
+  }
+  .rightServiceBooking .imgdoc {
+    width: 100%;
+    height: 250px;
+  }
+  .rightServiceBooking .imgdoc img {
+    width: 100%;
+    height: 250px;
+  }
+}
+
+/* ############################### Complete Purchase ###################################### */
+
+.rightCompletePurchase input.inputshop{
+  width: 100%;
+  padding: 10px;
+  border-radius: 30px;
+  border: 1px solid #E3E3E3;
+  display: block;
+  outline: none;
+  margin-bottom: 10px;
+}
+.leftCompletePurchase{
+  width: 50%;
+}
+.leftCompletePurchase input.inputshop{
+  width: 100%;
+  padding: 10px;
+  border-radius: 30px;
+  border: 1px solid #E3E3E3;
+  display: block;
+  outline: none;
+  margin-bottom: 10px;
+}
+.rightCompletePurchase select{
+  width: 100%;
+  padding: 15px;
+  border-radius: 30px;
+  border: 1px solid #DCDCDC;
+  outline: none;
+  color: #555555;
+  background-position: left 0.75rem center;
+  margin-bottom: 10px;
+}
+.rightCompletePurchase select:focus{
+  box-shadow: 0 0 0 !important;
+  border: 1px solid #DCDCDC;
+}
+
+.allCompletePurchase{
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid #E8E8E8;
+  padding: 30px;
+  border-radius: 30px;
+  margin-top: 30px;
+  gap: 30px;
+}
+.rightCompletePurchase{
+  width: 40%;
+}
+.cobon{
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+}
+.cobon .btndetailstable{
+  width: 100px;
+  height: max-content;
+}
+
+ .inputff{
+  margin-right: 3px !important;
+}
+
+
+/* ///////////////// */
+.leftCompletePurchase table{
+  font-size: 14px;
+}
+
+.leftCompletePurchase .imgetable{
+  width: 90px;
+  height: 80px;
+}
+
+.leftCompletePurchase .numProdDetels input{
+  width: 50px;
+  height: 50px;
+}
+.leftCompletePurchase.numProdDetels label{
+  width: 22px;
+  height: 23px;
+  margin-bottom: 3px;
+}
+
+.leftCompletePurchase .table>:not(caption)>*>* {
+  border-bottom-width: 0;
+  padding: 8px !important;
+}
+
+.checkouttable{
+  background-color: #F4F4F4;
+  padding: 30px;
+  border-radius: 30px;
+  color: #776352;
+  margin-top: 70px;
+}
+
+.rowCheckouttable{
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #d4d0cc;
+  padding: 10px 0 5px 0;
+}
+
+.allrowCheckouttable{
+  border: none;
+  border-top: 1px solid #d4d0cc;
+  color: #000;
+}
+
+.btndon{
+  background-color: #88CE97;
+  padding: 10px 20px;
+  color: #fff;
+  border: none;
+  border-radius: 30px;
+  margin-top: 10px;
+  display: flex;
+  margin-right: auto;
+}
+
+@media (max-width:991px) {
+  .allCompletePurchase{
+    flex-direction: column;
+  }
+  .rightCompletePurchase{
+    width: 100%;
+  }
+  .leftCompletePurchase{
+    width: 100%;
+  }
+}
+
+.tablemodell{
+  --bs-modal-width: 900px !important;
+}
+
+@media (max-width:991px) {
+
+  .tablemodell .table{
+    width: 770px;
+  }
+}
+
+
+.tablemodell .modal-content{
+  position: relative;
+}
+
+.closemodell{
+  position: absolute ;
+  top: 7px ;
+  right: 7px ;
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+}
+
+.closemodell img{
+  width: 100%;
+
+}
+
+.provieww{
+  --bs-modal-width: 1000px;
+}
+
+
+
+.product-sidebar__price-range .form-group {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+
+.product-sidebar__price-range .form-group p {
+  font-size: 14px;
+  color: var(--thm-color);
+  margin: 0;
+  line-height: 1em;
+}
+
+.product-sidebar__price-range .left {
+  display: flex;
+  align-items: center;
+}
+
+.product-sidebar__price-range .left > span {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.product-sidebar__price-range .thm-btn {
+  padding: 0;
+  font-size: 12px;
+  font-weight: 500;
+  width: 70px;
+  height: 33px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.product-sidebar__price-range .thm-btn:hover {
+  background-color: var(--thm-black);
+  color: #fff;
+}
+
+.product-sidebar__price-range .noUi-horizontal {
+  height: 4px;
+  background-color: #f4f4f4;
+  border: none;
+  box-shadow: none;
+}
+
+.product-sidebar__price-range .noUi-handle {
+  border-radius: 50%;
+  width: 14px;
+  height: 14px;
+  background-color: var(--thm-base);
+  border: none;
+  outline: none;
+  box-shadow: none;
+}
+
+.product-sidebar__price-range .noUi-handle::before,
+.product-sidebar__price-range .noUi-handle::after {
+  display: none;
+}
+
+.product-sidebar__price-range .noUi-connect {
+  background-color: var(--thm-base);
+}
+
+.product-sidebar__price-range .noUi-handle {
+  border-radius: 50%;
+  width: 14px;
+  height: 14px;
+  background-color: var(--thm-base);
+  border: none;
+  outline: none;
+  box-shadow: none;
 }
