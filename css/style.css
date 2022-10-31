@@ -6,6 +6,8 @@
   src: url("/font/JF-Flat-Regular.ttf");
 }
 
+
+
 *{
   font-family: myFirstFont;
     direction: rtl;
@@ -196,8 +198,6 @@ h1{
 .navbar{
     color: #F4F4F4;
     box-shadow: #c9c9c928 0px  15px 55px 25px  inset;
-
-    overflow: hidden;
     padding: 0px !important;
     position: sticky;
     top: 0;
@@ -306,6 +306,45 @@ h1{
 .loginnav a{
   color: #989898;
 }
+.loginnav{
+  position: relative;
+  padding: 10px 0;
+}
+
+
+.poplogin{
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  top: 50px;
+  padding: 10px 20px;
+  gap: 13px;
+  border-radius: 20px;
+  display: none;
+
+}
+
+.poplogin a{
+  color: #656565;
+}
+
+.poplogin::after {
+  content: "";
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  border-bottom: 15px solid #fff;
+  position: absolute;
+  top: -5px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.loginnav:hover .poplogin{
+  display: flex;
+}
+
+
 
 /* ////////////////////////////////////////search Model////////////////////////////////////////////// */
 
@@ -414,13 +453,16 @@ h1{
   width: 100px;
 }
 
-.loginnav{
+.listmenumob .loginnav{
   background-color: transparent;
   border: 1px solid #F2EAE0;
   padding: 10px;
   border-radius: 30px;
   justify-content: center;
   flex-direction: row-reverse;
+}
+.loginnav img{
+  cursor: pointer;
 }
 
 
@@ -2951,3 +2993,112 @@ ul#pills-tab{
 
 /* //////////////////////////////////////////// */
 
+.navlogtop{
+  box-shadow: 0 0 0;
+}
+
+.navlogtop .rightNavTap{
+  padding-bottom: 20px;
+  border-bottom: 1px solid #C5C5C5;
+}
+
+.imglefttree {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -1;
+}
+.imgrighttree {
+  position: absolute;
+  right: 0;
+  top: 0;
+
+}
+
+
+
+.bodylogin{
+  text-align: center;
+  width: 100%;
+
+}
+
+.allbodylogin{
+  margin-top: 100px !important;
+
+}
+
+.bodylogin h1{
+  color: #88CE97;
+}
+.bodylogin h1 span{
+  color: #656565;
+}
+
+.formlogin{
+  width: 450px;
+  margin: 0 auto;
+}
+
+.inputlogin {
+  gap: 10px;
+}
+.inputlogin input{
+  width: 100%;
+  background-color: transparent;
+}
+
+.formlogin .btndon{
+  padding: 15px 20px;
+}
+
+.haco{
+  color: #656565;
+  margin-top: 20px;
+}
+.haco a{
+  color: #88CE97;
+  text-decoration: underline;
+}
+
+.footerlogin{
+  position: absolute;
+  width: 100%;
+  bottom: 0 !important;
+  background-color: #F4F4F4;
+  margin: 0 !important;
+}
+
+
+
+
+footer p{
+  text-align: center;
+}
+
+.bodylo{
+  margin-top: 140px !important;
+}
+
+@media (max-width:991px) {
+  .imgrighttree {
+    display: none;
+  }
+  .bodylo{
+    margin-top: 40px !important;
+  }
+  .allbodylogin{
+    margin-top: 40px !important;
+  }
+  
+  
+}
+@media (max-width:550px) {
+  .formlogin {
+    width: 90%;
+  }
+  .inputlogin{
+    flex-direction: column;
+  }
+  
+}
