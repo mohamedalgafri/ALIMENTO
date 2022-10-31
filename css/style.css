@@ -3090,6 +3090,9 @@ footer p{
   .allbodylogin{
     margin-top: 40px !important;
   }
+  .navlogtop .imgLogo{
+    margin: 0 auto;
+  }
   
   
 }
