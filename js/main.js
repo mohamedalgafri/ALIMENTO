@@ -85,15 +85,16 @@ window.addEventListener("scroll", scrollUp);
 
 /////////////////////////////////////////////////////////
 
+
 var nonLinearStepSlider = document.getElementById('slider-non-linear-step');
 
 noUiSlider.create(nonLinearStepSlider, {
-    start: [500, 4000],
+    start: [150, 350],
+    direction: 'rtl',
+    connect: true,
     range: {
         'min': [0],
-        '10%': [500, 500],
-        '50%': [4000, 1000],
-        'max': [10000]
+        'max': [500]
     }
 });
 

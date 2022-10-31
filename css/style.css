@@ -10,7 +10,7 @@
 
 *{
   font-family: myFirstFont;
-    direction: rtl;
+  direction: rtl;
 }
 a{
    text-decoration: none;
@@ -351,7 +351,6 @@ h1{
 
 .searchmodal{
   display: flex;
-  justify-content: space-between;
   align-items: center;
   gap: 20px;
 }
@@ -361,7 +360,7 @@ h1{
 }
 
 .searchmodal input{
-  width: 80%;
+  width: 50%;
   border-radius: 50px;
   height: 50px;
   padding-right: 20px;
@@ -376,6 +375,11 @@ h1{
   .offcanvas{
     width: 100% !important;
   }
+
+  .searchmodal input{
+    width: 100%;
+  }
+
 }
 
 .btnsearch{
@@ -387,6 +391,9 @@ h1{
   color: #fff;
   margin-top: 20px;
   float: left;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 
@@ -1578,6 +1585,9 @@ h1{
   margin-top: 15px;
   border-radius: 30px;
   padding: 15px 20px;
+  direction: ltr !important;
+  width:100%;
+  overflow: hidden;
 }
 
 
@@ -3005,14 +3015,14 @@ ul#pills-tab{
 .imglefttree {
   position: absolute;
   left: 0;
-  top: 0;
+  bottom: 0;
   z-index: -1;
 }
 .imgrighttree {
   position: absolute;
   right: 0;
-  top: 0;
-
+  bottom: 0;
+  z-index: -1;
 }
 
 
@@ -3072,9 +3082,7 @@ ul#pills-tab{
 
 
 
-footer p{
-  text-align: center;
-}
+
 
 .bodylo{
   margin-top: 140px !important;
@@ -3104,4 +3112,118 @@ footer p{
     flex-direction: column;
   }
   
+}
+
+/* ####################### Error Page ########################### */
+
+.allbodyError{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 100px;
+}
+
+.rightError p{
+  width: 80%;
+}
+
+.leftError{
+  width: 500px;
+}
+.leftError img{
+  width: 100%;
+}
+
+.btnerror{
+  background-color: #FDFBF7;
+  padding: 15px 20px;
+  border: none;
+  border-radius: 30px;
+  color: #716355 !important;
+  cursor: pointer;
+}
+
+.rightError p{
+  margin-bottom: 60px;
+}
+
+@media (max-width:991px) {
+  .allbodyError{
+    flex-direction: column;
+    gap: 30px;
+    margin-bottom: 50px;
+  }
+  
+  .rightError p{
+    width: 100%;
+  }
+  .leftError{
+    width: 420px;
+  }
+
+}
+@media (max-width:500px) {
+  .leftError{
+    width: 320px;
+  }
+}
+
+/* .noUi-txt-dir-rtl.noUi-horizontal .noUi-origin{
+  direction: rtl !important;
+} */
+
+/* /////////////////////////////////////// */
+
+.noUi-connects{
+  background-color: #E8E8E8;
+  border-radius: 30px;
+}
+
+.noUi-horizontal .noUi-handle {
+  width: 30px;
+  height: 30px;
+  right: -17px;
+  top: -6px;
+  border-radius: 50px;
+  background-color: #88CE97;
+}
+
+.noUi-handle:after, .noUi-handle:before {
+  content: "";
+  display: block;
+  position: absolute;
+  height: 13px;
+  width: 13px;
+  border-radius: 50%;
+  display: flex;
+  background: #fff;
+  left: 8px;
+  top: 7px;
+}
+
+.noUi-handle{
+  box-shadow: 0 0 0;
+}
+
+.noUi-connect{
+  background-color: #88CE97;
+}
+
+.noUi-target{
+  border: none;
+}
+
+div#slider-non-linear-step-value{
+  margin-top: 20px;
+}
+
+/* ####################### bodySearching ########################### */
+
+.bodySearching h2 span{
+  color: #88CE97;
+}
+
+.endlist{
+  color: #777777;
+  text-align: center;
 }
