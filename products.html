@@ -6,12 +6,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Products</title>
+ 
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/animate.min.css" />
-    <link rel="stylesheet" href="css/swiper.css" />
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="nouislider/nouislider.min.css">
+    <link rel="stylesheet" href="css/swiper.css">
+    <link rel="stylesheet" href="css/style.css">
+
+
     <link rel="stylesheet"
     href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+
 </head>
 <body>
 
@@ -125,26 +130,16 @@
                 </div>
     
                 <div class="priceFilter">
-    
-                    <!-- /.product-sidebar__single -->
-                    <div class="product-sidebar__single">
-                        <h3>Price</h3>
-                        <div class="product-sidebar__price-range">
-                            <div class="range-slider-price" id="range-slider-price"></div>
-                            <div class="form-group">
-                                <div class="left">
-                                    <p>$<span id="min-value-rangeslider"></span></p>
-                                    <span>-</span>
-                                    <p>$<span id="max-value-rangeslider"></span></p>
-                                </div><!-- /.left -->
-                                <div class="right">
-                                    <input type="submit" class="thm-btn" value="Filter">
-                                </div><!-- /.right -->
-                            </div>
-                        </div><!-- /.product-sidebar__price-range -->
-                    </div><!-- /.product-sidebar__single -->
-    
+
+                          
+                 <div id="slider-non-linear-step"></div> 
+
+                 <div id="slider-non-linear-step-value"></div>
+
+
+
                 </div>
+
     
                 <div class="categoriesProducts">
                     <p>التصنيفات</p>
@@ -176,6 +171,8 @@
                 </div>
     
                 <button class="restFillter">إعادة التعيين</button>
+
+                
     
     
             </div>
@@ -227,6 +224,7 @@
                             <div class="popcardpro">
                                 <img src="image/Basket Iconn.svg" alt="">
                             </div>
+
         
                         </div>
                     </div>
@@ -766,7 +764,8 @@
     <i class='bx bx-chevron-up'></i>
 </a>
 
-<script src="../js/swiper.js"></script>
+<script src="js/swiper.js"></script>
+<script src="nouislider/nouislider.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <script src="js/main.js"></script>
 
