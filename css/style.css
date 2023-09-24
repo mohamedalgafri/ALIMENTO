@@ -1,8 +1,8 @@
 @font-face {
   font-family: myFirstFont;
-  src: url("/font/alfont.ttf");
-  src: url("/font/JF-Flat-medium.ttf");
-  src: url("/font/JF-Flat-Regular.ttf");
+  src: url("../font/alfont.ttf");
+  src: url("../font/JF-Flat-medium.ttf");
+  src: url("../font/JF-Flat-Regular.ttf");
 }
 
 * {
