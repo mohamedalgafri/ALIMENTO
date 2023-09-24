@@ -6,7 +6,7 @@
 }
 
 * {
-  font-family: myFirstFont;
+  font-family: myFirstFont !important;
   direction: rtl;
 }
 a {
