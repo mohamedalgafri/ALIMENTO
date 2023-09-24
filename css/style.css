@@ -86,7 +86,10 @@ h1 {
 }
 
 .imgLogo {
-  width: 10%;
+  height: auto;
+}
+.imgLogo img {
+  width: 130px;
   height: auto;
 }
 
@@ -558,16 +561,23 @@ h1 {
 
 .mySwiperheder {
   width: 100%;
-  height: 700px;
+  height: 600px;
 }
 
 .mySwiperheder .slideheader img {
-  height: 700px;
+  height: 100%;
   width: 100%;
+  object-fit: cover;
 }
-
+@media (max-width: 1800px) {
+  .mySwiperheder {
+    width: 100%;
+    height: 400px;
+  }
+}
 @media (max-width: 991px) {
   .mySwiperheder {
+    width: 100%;
     height: 500px;
   }
 
